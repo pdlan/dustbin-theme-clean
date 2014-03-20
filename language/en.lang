@@ -1,0 +1,15 @@
+{
+    "titles" : {
+        "page" : "{{site_name}}",
+        "article" : "{{title}} | {{site_name}}",
+        "archives" : "Archives | {{site_name}}",
+        "tag" : "{{tag}} | {{site_name}}"
+    },
+    "tagged_in" : "Tagged in",
+    "archives" : "Archives",
+    "page_of_pages_1" : "Page",
+    "page_of_pages_2" : "of",
+    "page_of_pages_3" : "",
+    "prev" : "Prev",
+    "next" : "Next"
+}

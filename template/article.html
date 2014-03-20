@@ -1,13 +1,13 @@
 <div class="post">
     <h1 id="title">{{title}}</h1>
     <div class="date">
-    {{date}}
+    {{date:x-format-time=%b %d, %Y}}
     </div>
     <article>
     {{content}}
     </article>
     <div class="tags">
-        Tagged in :
+       {{:x-get-language=tagged_in}} :
         {{#tags}}
         <a href="/tag/{{name}}/">{{name}}</a>
         {{/tags}}

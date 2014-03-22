@@ -3,7 +3,9 @@
 <ol id="posts">
     {{#articles}}
     <li>
-        <span class="meta">{{date:x-format-time=%Y-%m-%d}}</span> <a href="/article/{{id}}/">{{title}}</a>
+        <span class="meta">
+        {{date:x-format-time=["string", "%Y-%m-%d"]}}
+        </span> <a href="{{:x-get-path=/article/}}{{id}}/">{{title}}</a>
     </li>
     {{/articles}}
 </ol>

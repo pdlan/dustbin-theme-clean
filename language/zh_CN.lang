@@ -1,15 +1,15 @@
 {
     "titles" : {
-        "page" : "{{site_name}}",
+        "page" : "{{site_name}} | {{site_description}}",
         "article" : "{{title}} | {{site_name}}",
-        "archives" : "Archives | {{site_name}}",
+        "archives" : "归档 | {{site_name}}",
         "tag" : "{{tag}} | {{site_name}}"
     },
+    "time_format" : "%Y 年 %m 月 %d 日",
+    "page_of_pages" : "第 {{current_page}} 页, 共 {{number_of_pages}} 页",
+    "prev" : "上一页",
+    "next" : "下一页",
     "tagged_in" : "被贴上了标签",
     "archives" : "归档",
-    "page_of_pages_1" : "第",
-    "page_of_pages_2" : "页, 共",
-    "page_of_pages_3" : "页",
-    "prev" : "上一页",
-    "next" : "下一页"
+    "tag" : "标签"
 }

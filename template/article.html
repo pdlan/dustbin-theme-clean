@@ -1,15 +1,15 @@
 <div class="post">
     <h1 id="title">{{title}}</h1>
     <div class="date">
-    {{date:x-format-time=%b %d, %Y}}
+    {{date:x-format-time=["language", "time_format"]}}
     </div>
     <article>
     {{content}}
     </article>
     <div class="tags">
-       {{:x-get-language=tagged_in}} :
+       {{language_tagged_in}} :
         {{#tags}}
-        <a href="/tag/{{name}}/">{{name}}</a>
+        <a href="{{:x-get-path=/tag/}}{{name}}/">{{name}}</a>
         {{/tags}}
     </div>
 <div id="disqus_thread"></div>

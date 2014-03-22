@@ -1,16 +1,18 @@
 <ol id="posts">
 {{#articles}}
     <li>
-        <span class="date">{{date:x-format-time=%b %d, %Y}}</span> <a href="/article/{{id}}/">{{title}}</a>
+        <span class="date">
+        {{date:x-format-time=["language", "time_format"]}}
+        </span> <a href="{{:x-get-path=/article/}}{{id}}/">{{title}}</a>
     </li>
 {{/articles}}
 </ol>
 <div id="pagination">
-    <span>{{:x-get-language=page_of_pages_1}} {{current_page}} {{:x-get-language=page_of_pages_2}} {{pages}} {{:x-get-language=page_of_pages_3}}</span>
+    <span>{{language_page_of_pages}}</span>
     {{#prev}}
-    <a id="prev" href="/page/{{prev_page}}/">{{:x-get-language=prev}}</a>
+    <a id="prev" href="/page/{{prev_page}}/">{{language_prev}}</a>
     {{/prev}}
     {{#next}}
-    <a id="next" href="/page/{{next_page}}/">{{:x-get-language=next}}</a>
+    <a id="next" href="/page/{{next_page}}/">{{language_next}}</a>
     {{/next}} 
 </div>

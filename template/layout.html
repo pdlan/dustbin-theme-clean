@@ -4,15 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width" />
     <title>{{block_title}}</title>
-    <link rel="stylesheet" href="/static/clean.css" type="text/css" />
-    <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="{{site_name}}" />
+    <link rel="stylesheet" href="{{:x-get-path=/static/clean.css}}" type="text/css" />
+    <link rel="alternate" type="application/rss+xml" href="{{:x-get-path=/feed.xml}}" title="{{site_name}}" />
 </head>
 <body>
     <div id="wrapper" class="yue">
         <header id="header">
-            <a href="{{site_url}}" id="site_name">{{site_name}}</a>
+            <a href="{{:x-get-path=/}}" id="site_name">{{site_name}}</a>
             <nav>
-                <a href="/archives/">{{:x-get-language=archives}}</a>
+                <a href="{{:x-get-path=/archives/}}">
+                {{language_archives}}
+                </a>
             </nav>
         </header>
         <div id="content">

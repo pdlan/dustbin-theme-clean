@@ -10,9 +10,9 @@
 <div id="pagination">
     <span>{{language_page_of_pages}}</span>
     {{#prev}}
-    <a id="prev" href="/page/{{prev_page}}/">{{language_prev}}</a>
+    <a id="prev" href="{{:x-get-path=/page/}}{{current_page:x-plus=-1}}/">{{language_prev}}</a>
     {{/prev}}
     {{#next}}
-    <a id="next" href="/page/{{next_page}}/">{{language_next}}</a>
+    <a id="next" href="{{:x-get-path=/page/}}{{current_page:x-plus=1}}/">{{language_next}}</a>
     {{/next}} 
 </div>

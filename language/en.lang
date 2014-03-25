@@ -3,7 +3,8 @@
         "page" : "{{site_name}} | {{site_description}}",
         "article" : "{{title}} | {{site_name}}",
         "archives" : "Archives | {{site_name}}",
-        "tag" : "{{tag}} | {{site_name}}"
+        "tag" : "{{tag}} | {{site_name}}",
+        "404" : "{{site_name}} | {{site_description}}"
     },
     "time_format" : "%b %d, %Y",
     "page_of_pages" : "Page {{current_page}} of {{number_of_pages}}",
@@ -11,5 +12,6 @@
     "next" : "Next"
     "tagged_in" : "Tagged in",
     "archives" : "Archives",
-    "tag" : "Tag"
+    "tag" : "Tag",
+    "notfound" : "Oops, Page Not Found."
 }
